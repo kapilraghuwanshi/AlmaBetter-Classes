@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        * {
+            background-color: orange !;
+        }
+      .myGrid {
+        border: 2px blue solid;
+        width: 400px;
+        height: 500px;
+        display: grid;
+        /* grid-template-rows: 100px 30%; */
+        /* grid-template-columns: 100px 30%; */
+        /* grid-template: 200px 40% / 20% 100px 70%; */
+        grid-template: 2fr 1fr 1fr / 1fr 3fr 1fr;
+        column-gap: 10px;
+        row-gap: 15px;
+        padding: 15px;
+        margin: 30px;
+      }
+      .box {
+        background-color: #42bdbd;
+        color: black;
+        border-radius: 5px;
+        border: 2px red dotted;
+        padding: 5px;
+        margin: 10px;
+      }
+      .item {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column: 1 / 4;
+        font-style: italic;
+        font-size: xx-large;
+      }
+      .item1 {
+        grid-area: 2 / 3 / 4 / span 5;
+      }
+      .myItem {
+        background-color:red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="myGrid">
+      <div class="box a">A</div>
+      <div class="box b">B</div>
+      <div class="box c">C</div>
+      <div class="box d">D</div>
+      <div class="box e item">E</div>
+      <div class="box f">F</div>
+      <div class="box g">G</div>
+      <div class="box h item1">H</div>
+      <div class="box i">I</div>
+      <div class="box j">J</div>
+    </div>
+    <div class="myItem">F</div>
+  </body>
+</html>
