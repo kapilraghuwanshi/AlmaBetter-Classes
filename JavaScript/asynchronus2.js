@@ -120,3 +120,10 @@ let stopIntervalId = setInterval(function handler(){
 }, 1000);
 
 clearInterval(stopIntervalId)
+
+
+
+
+setInterval(console.log("hey i am error"));
+
+//TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
