@@ -46,5 +46,10 @@
 
 //  npm install gh-pages --save-dev
 
+// add these 3 script in package.json file
+// "homepage": "https://kapilraghuwanshi.github.io/react-unit-testing",
+// "predeploy": "npm run build", 
+// "deploy": "gh-pages -d build",
+
 // npm run deploy -- -m "Deploy React app to GitHub Pages"
 
