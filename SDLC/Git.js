@@ -41,3 +41,10 @@
 // git checkout -b <branch-name>
 
 // git branch -a
+
+// deploy to github pages (https://github.com/gitname/react-gh-pages)
+
+//  npm install gh-pages --save-dev
+
+// npm run deploy -- -m "Deploy React app to GitHub Pages"
+
